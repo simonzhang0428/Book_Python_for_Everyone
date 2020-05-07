@@ -1,9 +1,23 @@
+# CIS 41A
+# Sicong Zhang
+# Assignments chapter4
+# 05/07/2020
+
+
 # P4.9
 # Write a program that reads a word and prints the word in reverse.
 # For example, if the user provides the input "Harry",
 # the program prints
 # yrraH
+def print_reverse(str):
+    index = len(str) - 1
+    while index >= 0:
+        letter = str[index]
+        print(letter, end='')
+        index = index - 1
 
+inp = input('Enter a word for reverse:')
+print_reverse(inp)
 
 # P4.12
 # Write a program that reads a word and prints all substrings, sorted by length.
@@ -21,7 +35,7 @@
 # The Fibonacci numbers are defined by the sequence
 # f1 = 1
 # f2 = 1
-# fn = fn−1 + fn−2
+# fn = fn-1 + fn-2
 # Reformulate that as
 # fold1 = 1
 # fold2 = 1
